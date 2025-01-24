@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Stil for lenker i headeren */
+ a {
+    text-decoration: none; /* Fjern understreking */
+    color: white; /* Hvit tekstfarge */
+}
+
+.content a {
+    background-color: #28a745; /* Grønn farge */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Endrer musepekeren */
+    border-radius: 5px; /* Runde hjørner */
+}
+ content a:hover {
+    background-color: #218838; /* Mørkere grønn ved hover */
+}
+
+/* Navigasjonsmeny */
+.sider {
+    display: flex;
+    flex-direction: row; /* Horisontal layout */
+    justify-content: center; /* Sentraliserer innholdet */
+    gap: 10vw; /* Avstand mellom lenker */
+    background-color: #212121; /* Mørk bakgrunn */
+    padding-top: 1.5vh; /* Topp padding */
+    padding-bottom: 1vh; /* Bunn padding */
+}
+
+/* Stil for ticketing-systemets skjema */
+.ticketing form {
+    max-width: 400px; /* Maksimal bredde */
+    margin: 0 auto; /* Sentraliser skjemaet */
+}
+
+/* Input-felt og tekstområde */
+.ticketing input, textarea {
+    width: 100%;
+    padding: 10px; /* Innvendig padding */
+    margin: 10px 0; /* Vertikal margin */
+    border: 1px solid #ccc; /* Lys grå kant */
+    border-radius: 5px; /* Runde hjørner */
+}
+
+/* Stil for ticketing-knappen */
+ button {
+    background-color: #28a745; /* Grønn farge */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Endrer musepekeren */
+    border-radius: 5px; /* Runde hjørner */
+}
+ button:hover {
+    background-color: #218838; /* Mørkere grønn ved hover */
+}
+
+/* Generell stil for knapper */
+.btnTest1 {
+    padding: 30px 30px;
+    background-color: #fff;
+    border: black 2px solid;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.19); /* Skygge */
+    transition: 0.3s; /* Glatt overgang */
+}
