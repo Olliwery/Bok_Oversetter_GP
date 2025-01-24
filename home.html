@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjemmeside</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sider">
+        <a href="/">Home</a>
+        <a href="/register">Login / Register</a>
+        <a href="/bestilling">Bestill Oversetting</a>
+    </div>
+   
+    {% block body %}
+    <h1>Bok Oversetter</h1>
+    <div class="content">
+        {% if username %}
+          <h4>Velkommen, {{ username }}! Bestill en bok oversetter oppe i menyen.</h4>
+          <a href="/logout">Logout</a>
+        {% else %}
+          <p>Velkommen til siden! Vennligst <a href="/login">Logg inn</a> eller <a href="/register">Registrer deg.</a></p>
+        {% endif %}
+      </div>
+</div>
+
+
+
+<script src="/static/javascript.js"></script>
+    {% endblock %}
+
+</body>
+</html>

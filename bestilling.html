@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block body %}
+<h1>Bestill Oversetting av Bok</h1>
+
+<div class="ticketing">
+    <form action="/bestilling_post" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button  type="submit"><a href="/submitted">Send Inn bestilling</a></button>
+    </form>
+</div>
+
+
+{% endblock %}
+

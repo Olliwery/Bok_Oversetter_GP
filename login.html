@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block body %}
+<h1>Login</h1>
+<div class="login">
+  <form action="/login_post" method="POST">
+      <label for="name">Brukernavn:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Passord:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Log in</button>
+  </form>
+</div>
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
+<p>Har ikke en bruker enda? <a style="color: black;" href="/register">Trykk her!</a></p>
+{% endblock %}
